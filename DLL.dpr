@@ -15,12 +15,11 @@ uses
   System.Classes,
   System.UITypes,
   Vcl.Dialogs,
-  Vcl.Consts in 'D:\Projetos\Delphi\industrial\Vcl.Consts.pas',
   Unit1 in 'Unit1.pas' {Form1},
-  Request in 'D:\Projetos\Delphi\Bibliotecas\Acesso_Rest\Request.pas',
-  Response in 'D:\Projetos\Delphi\Bibliotecas\Acesso_Rest\Response.pas',
-  Request.Intf in 'D:\Projetos\Delphi\Bibliotecas\Acesso_Rest\interfaces\Request.Intf.pas',
-  Response.Intf in 'D:\Projetos\Delphi\Bibliotecas\Acesso_Rest\interfaces\Response.Intf.pas';
+  Request in 'Acesso_Rest\Request.pas',
+  Response in 'Acesso_Rest\Response.pas',
+  Request.Intf in 'Acesso_Rest\interfaces\Request.Intf.pas',
+  Response.Intf in 'Acesso_Rest\interfaces\Response.Intf.pas';
 
 {$R *.res}
 

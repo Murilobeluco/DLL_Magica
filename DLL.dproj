@@ -86,15 +86,14 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="D:\Projetos\Delphi\industrial\Vcl.Consts.pas"/>
         <DCCReference Include="Unit1.pas">
             <Form>Form1</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="D:\Projetos\Delphi\Bibliotecas\Acesso_Rest\Request.pas"/>
-        <DCCReference Include="D:\Projetos\Delphi\Bibliotecas\Acesso_Rest\Response.pas"/>
-        <DCCReference Include="D:\Projetos\Delphi\Bibliotecas\Acesso_Rest\interfaces\Request.Intf.pas"/>
-        <DCCReference Include="D:\Projetos\Delphi\Bibliotecas\Acesso_Rest\interfaces\Response.Intf.pas"/>
+        <DCCReference Include="Acesso_Rest\Request.pas"/>
+        <DCCReference Include="Acesso_Rest\Response.pas"/>
+        <DCCReference Include="Acesso_Rest\interfaces\Request.Intf.pas"/>
+        <DCCReference Include="Acesso_Rest\interfaces\Response.Intf.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -520,13 +519,13 @@
                         <Operation>1</Operation>
                     </Platform>
                 </DeployClass>
-                <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="iOSDevice64" Name="$(PROJECTNAME).app"/>
                 <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
                 <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME).app"/>
-                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
             </Deployment>
             <Platforms>
                 <Platform value="Win32">True</Platform>

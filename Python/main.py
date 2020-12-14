@@ -1,6 +1,6 @@
 import ctypes
 
-lib = ctypes.WinDLL("DLL.dll")
+lib = ctypes.WinDLL("C:/Users/usua54/Desktop/DLL_Magica/Python/DLL.dll")
 
 Somar = lib.Somar
 Somar.restype = ctypes.c_int
