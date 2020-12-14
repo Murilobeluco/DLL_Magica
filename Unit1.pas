@@ -55,6 +55,9 @@ begin
   Foto.Position := 0;
 
   ShowImageFromStream(Image1, Foto);
+
+  FreeAndNil(Recebido);
+  FreeAndNil(foto);
 end;
 
 procedure TForm1.ShowImageFromStream(AImage: TImage; AData: TStream);
@@ -70,8 +73,5 @@ begin
     JPEGImage.Free;
   end;
 end;
-
-
-
 
 end.
