@@ -19,7 +19,9 @@ uses
   Request in 'Acesso_Rest\Request.pas',
   Response in 'Acesso_Rest\Response.pas',
   Request.Intf in 'Acesso_Rest\interfaces\Request.Intf.pas',
-  Response.Intf in 'Acesso_Rest\interfaces\Response.Intf.pas';
+  Response.Intf in 'Acesso_Rest\interfaces\Response.Intf.pas',
+  Jsons in 'Jsons.pas',
+  JsonsUtilsEx in 'JsonsUtilsEx.pas';
 
 {$R *.res}
 
@@ -45,7 +47,6 @@ end;
 
 procedure abrir; stdcall;
 begin
-  MessageDlg('entrou', mtInformation, [mbOk], 0);
   Form1 := TForm1.Create(nil);
   form1.ShowModal;
   FreeAndNil(Form1);
