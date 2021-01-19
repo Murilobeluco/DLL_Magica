@@ -21,7 +21,8 @@ uses
   Request.Intf in 'Acesso_Rest\interfaces\Request.Intf.pas',
   Response.Intf in 'Acesso_Rest\interfaces\Response.Intf.pas',
   Jsons in 'Jsons.pas',
-  JsonsUtilsEx in 'JsonsUtilsEx.pas';
+  JsonsUtilsEx in 'JsonsUtilsEx.pas',
+  Unit2 in 'Unit2.pas' {Form2};
 
 {$R *.res}
 

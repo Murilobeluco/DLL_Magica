@@ -68,9 +68,9 @@ object Form1: TForm1
   end
   object Button1: TButton
     Left = 8
-    Top = 320
+    Top = 384
     Width = 548
-    Height = 106
+    Height = 42
     Caption = 'Button1'
     TabOrder = 0
     OnClick = Button1Click
@@ -85,6 +85,15 @@ object Form1: TForm1
     ReadOnly = True
     ScrollBars = ssBoth
     TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 8
+    Top = 336
+    Width = 548
+    Height = 42
+    Caption = 'JSON'
+    TabOrder = 2
+    OnClick = Button2Click
   end
   object IdSNTP1: TIdSNTP
     Active = True

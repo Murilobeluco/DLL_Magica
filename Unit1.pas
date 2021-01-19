@@ -18,9 +18,11 @@ type
     Timer1: TTimer;
     lblInfo: TLabel;
     Timer2: TTimer;
+    Button2: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
     procedure Timer2Timer(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     Lista:TStringList;
     procedure ShowImageFromStream(AImage: TImage; AData: TStream);
@@ -39,7 +41,7 @@ var
 implementation
 
 uses
-  Response, Request, JPEG, System.NetEncoding, Jsons;
+  Response, Request, JPEG, System.NetEncoding, Jsons, Unit2;
 
 {$R *.dfm}
 
@@ -102,6 +104,13 @@ begin
     FreeAndNil(Recebido);
     FreeAndNil(Foto);
   end;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  Form2 := TForm2.Create(self);
+  Form2.ShowModal;
+  FreeAndNil(Form2);
 end;
 
 function TForm1.retornaImagem(vsId: String): TBytes;
