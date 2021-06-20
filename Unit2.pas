@@ -27,7 +27,7 @@ implementation
 
 
 Uses
- System.JSON, Request, REST.Types;
+ System.JSON, REST.Types, RESTRequest4D;
 
 {$R *.dfm}
 
@@ -42,7 +42,7 @@ var
 begin
   Resposta := TRequest.New
                       .BaseURL('https://api.jsonbin.io/b/6001fa4a4f42973a289d682c')
-                      .AddHeader('secret-key', '$2b$10$W1HJIZPyGuvMH26c8DmrSedhgbGtlrAPio4l8.tiCuAUeWchLyKcq', [poDoNotEncode])
+                      .AddHeader('secret-key', '$2b$10$W1HJIZPyGuvMH26c8DmrSedhgbGtlrAPio4l8.tiCuAUeWchLyKcq')
                       .Get;
 
   {Formas de receber e ler o JSON}

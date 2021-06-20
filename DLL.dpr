@@ -16,13 +16,14 @@ uses
   System.UITypes,
   Vcl.Dialogs,
   Unit1 in 'Unit1.pas' {Form1},
-  Request in 'Acesso_Rest\Request.pas',
-  Response in 'Acesso_Rest\Response.pas',
-  Request.Intf in 'Acesso_Rest\interfaces\Request.Intf.pas',
-  Response.Intf in 'Acesso_Rest\interfaces\Response.Intf.pas',
   Jsons in 'Jsons.pas',
   JsonsUtilsEx in 'JsonsUtilsEx.pas',
-  Unit2 in 'Unit2.pas' {Form2};
+  Unit2 in 'Unit2.pas' {Form2},
+  RESTRequest4D in '..\Acesso_Rest\RESTRequest4D.pas',
+  RESTRequest4D.Request.Contract in '..\Acesso_Rest\RESTRequest4D.Request.Contract.pas',
+  RESTRequest4D.Request.Indy in '..\Acesso_Rest\RESTRequest4D.Request.Indy.pas',
+  RESTRequest4D.Response.Contract in '..\Acesso_Rest\RESTRequest4D.Response.Contract.pas',
+  RESTRequest4D.Response.Indy in '..\Acesso_Rest\RESTRequest4D.Response.Indy.pas';
 
 {$R *.res}
 

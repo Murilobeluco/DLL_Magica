@@ -41,7 +41,7 @@ var
 implementation
 
 uses
-  Response, Request, JPEG, System.NetEncoding, Jsons, Unit2;
+   JPEG, System.NetEncoding, Jsons, Unit2, RESTRequest4D;
 
 {$R *.dfm}
 
@@ -162,7 +162,7 @@ begin
                         .Get;
 
 
-    JsonResposta.Parse(Resposta.JSONText);
+    JsonResposta.Parse(Resposta.Content);
 
     Result := 'Autor: ' + JsonResposta.Values['author'].AsString;
   finally
